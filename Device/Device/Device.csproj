@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD83A817-BB51-4AF7-AA21-AB12916C3DD6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Device</RootNamespace>
+    <AssemblyName>Device</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddBaoFei.aspx" />
+    <Content Include="Css\Share.css" />
+    <Content Include="DeleteType.aspx" />
+    <Content Include="DeviceWeixiujilu.aspx" />
+    <Content Include="GuanliDevice.aspx" />
+    <Content Include="InsertSheBei.aspx" />
+    <Content Include="LoginForm.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="My97DatePicker\calendar.js" />
+    <Content Include="My97DatePicker\jquery.datetimepicker.css" />
+    <Content Include="My97DatePicker\jquery.datetimepicker.js" />
+    <Content Include="My97DatePicker\jquery.js" />
+    <Content Include="My97DatePicker\lang\en.js" />
+    <Content Include="My97DatePicker\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\skin\default\img.gif" />
+    <Content Include="My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="My97DatePicker\WdatePicker.js" />
+    <Content Include="Password.aspx" />
+    <Content Include="RandCode.aspx" />
+    <Content Include="SelecrtBaoFei.aspx" />
+    <Content Include="SelectGuiHuan.aspx" />
+    <Content Include="SelectShebei.aspx" />
+    <Content Include="SelectWeiXiu.aspx" />
+    <Content Include="SheBeiBorrow.aspx" />
+    <Content Include="SheBeiReturn.aspx" />
+    <Content Include="UpdataSheBei.aspx" />
+    <Content Include="UpdataType.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Weixiuchuli.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBaoFei.aspx.cs">
+      <DependentUpon>AddBaoFei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddBaoFei.aspx.designer.cs">
+      <DependentUpon>AddBaoFei.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteType.aspx.cs">
+      <DependentUpon>DeleteType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteType.aspx.designer.cs">
+      <DependentUpon>DeleteType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceWeixiujilu.aspx.cs">
+      <DependentUpon>DeviceWeixiujilu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeviceWeixiujilu.aspx.designer.cs">
+      <DependentUpon>DeviceWeixiujilu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuanliDevice.aspx.cs">
+      <DependentUpon>GuanliDevice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuanliDevice.aspx.designer.cs">
+      <DependentUpon>GuanliDevice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertSheBei.aspx.cs">
+      <DependentUpon>InsertSheBei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertSheBei.aspx.designer.cs">
+      <DependentUpon>InsertSheBei.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Password.aspx.cs">
+      <DependentUpon>Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Password.aspx.designer.cs">
+      <DependentUpon>Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandCode.aspx.cs">
+      <DependentUpon>RandCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RandCode.aspx.designer.cs">
+      <DependentUpon>RandCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelecrtBaoFei.aspx.cs">
+      <DependentUpon>SelecrtBaoFei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelecrtBaoFei.aspx.designer.cs">
+      <DependentUpon>SelecrtBaoFei.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectGuiHuan.aspx.cs">
+      <DependentUpon>SelectGuiHuan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectGuiHuan.aspx.designer.cs">
+      <DependentUpon>SelectGuiHuan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectShebei.aspx.cs">
+      <DependentUpon>SelectShebei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectShebei.aspx.designer.cs">
+      <DependentUpon>SelectShebei.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectWeiXiu.aspx.cs">
+      <DependentUpon>SelectWeiXiu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectWeiXiu.aspx.designer.cs">
+      <DependentUpon>SelectWeiXiu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SheBeiBorrow.aspx.cs">
+      <DependentUpon>SheBeiBorrow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SheBeiBorrow.aspx.designer.cs">
+      <DependentUpon>SheBeiBorrow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SheBeiReturn.aspx.cs">
+      <DependentUpon>SheBeiReturn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SheBeiReturn.aspx.designer.cs">
+      <DependentUpon>SheBeiReturn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdataSheBei.aspx.cs">
+      <DependentUpon>UpdataSheBei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdataSheBei.aspx.designer.cs">
+      <DependentUpon>UpdataSheBei.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdataType.aspx.cs">
+      <DependentUpon>UpdataType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdataType.aspx.designer.cs">
+      <DependentUpon>UpdataType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Weixiuchuli.aspx.cs">
+      <DependentUpon>Weixiuchuli.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Weixiuchuli.aspx.designer.cs">
+      <DependentUpon>Weixiuchuli.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="Img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{40b32c88-bc74-4ae5-8fa6-c98d46f18820}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{7fce1b80-d651-4e50-a0ac-19b0d08c4a4a}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1149/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
